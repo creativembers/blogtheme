@@ -1,5 +1,5 @@
 
-css_dir = "stylesheets"
-sass_dir = "sass"
+css_dir = "css"
+sass_dir = "css/sass"
  
 output_style = :compressed
