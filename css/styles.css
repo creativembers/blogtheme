@@ -425,6 +425,15 @@ a:active {
   background-color: #00A3C0;
 }
 
+.menu-item {
+  border-left: 1px solid #ccc;
+}
+
+span.sub {
+  font-style: italic;
+  font-size: small;
+}
+
 /* =Global
 ----------------------------------------------- */
 button,

@@ -33,7 +33,9 @@
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'creativembers' ); ?></h1>
 			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'creativembers' ); ?>"><?php _e( 'Skip to content', 'creativembers' ); ?></a></div>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php $walker = new Menu_With_Description; ?>
+
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'walker' => $walker ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
