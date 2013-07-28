@@ -16,13 +16,13 @@ body {
 }
 .site-content {
 	margin: 0 25% 0 0;
-	padding: 20px 60px 20px 10px;
+	padding: 30px 108px 20px 48px;
 }
 .site-main {
 	background-color: #fff;
 	float: none;
 	margin: 0 auto;
-	padding: 20px 60px 20px 40px;
+	padding: 20px 80px 20px 40px;
 	overflow: hidden;
 	width: 1180px;
 	-webkit-box-shadow: 0px 0px 0px 6px rgba(245,130,32,0.3);
@@ -38,3 +38,13 @@ body {
 	width: 100%;
 }
 
+
+
+//class to hide the site description
+.hide { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}

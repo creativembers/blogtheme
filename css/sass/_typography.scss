@@ -15,7 +15,7 @@ body {
 	color: #85827A;
 	font-size: 16px;
 	font-size: 1.6rem;
-	line-height: 1.5;
+	line-height: 1.8;
 }
 
 /* Headings */
@@ -40,6 +40,10 @@ h1.widget-title {
   	font-variant: small-caps;
 }
 
+.page-content, .entry-content, .entry-summary {
+margin: 1.5em 0 0.5em;
+}
+
 ul, ol {
 	list-style-position: inside;
 	margin: 0;
@@ -48,7 +52,10 @@ ul, ol {
 li {
 	margin-bottom: 0.6em;
 }
-
+.widget-area {
+	font-size: 15px;
+	font-size: 1.5rem;
+}
 .widget-area ul, ol {
 	list-style-position: inside;
 	margin: 0;
