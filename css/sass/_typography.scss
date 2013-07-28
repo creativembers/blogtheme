@@ -1,0 +1,19 @@
+// 1. Set default font family to sans-serif.
+// 2. Prevent iOS text size adjust after orientation change, without disabling user zoom.
+
+html {
+    font-family: 'Open Sans', sans-serif;/* 1 */
+    font-size: 10px;
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+	color: #404040;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+}
