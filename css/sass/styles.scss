@@ -1,7 +1,7 @@
 @import "normalize";
 @import "layout";
 @import "typography";
-
+@import "links";
 
 /* =Global
 ----------------------------------------------- */
@@ -16,14 +16,7 @@ textarea {
 	font-size: 1.6rem;
 	line-height: 1.5;
 }
-body {
-	background-color: #FFD576;
-}
 
-/* Headings */
-h1,h2,h3,h4,h5,h6 {
-	clear: both;
-}
 hr {
 	background-color: #ccc;
 	border: 0;
@@ -36,7 +29,7 @@ p {
 	margin-bottom: 1.5em;
 }
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5em 1.5em;
 }
 ul {
 	list-style: disc;
@@ -220,18 +213,6 @@ textarea {
 	width: 98%;
 }
 
-/* Links */
-a {
-	color: royalblue;
-}
-a:visited {
-	color: purple;
-}
-a:hover,
-a:focus,
-a:active {
-	color: midnightblue;
-}
 
 /* Alignment */
 .alignleft {

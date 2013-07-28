@@ -31,158 +31,6 @@ template {
 }
 
 /* ==========================================================================
-   Base
-   ========================================================================== */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 10px;
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/**
- * Remove default margin.
- */
-body {
-  margin: 0;
-}
-
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-a {
-  background: transparent;
-}
-
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-a:focus {
-  outline: thin dotted;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-dfn {
-  font-style: italic;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-pre {
-  white-space: pre-wrap;
-}
-
-/**
- * Set consistent quote types.
- */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-/* ==========================================================================
    Embedded content
    ========================================================================== */
 /**
@@ -360,10 +208,14 @@ table {
   border-spacing: 0;
 }
 
-/*
-Theme Name: creativembers
-Layout: Content-Sidebar
-*/
+/* ==========================================================================
+   Base Layout
+   ========================================================================== */
+body {
+  margin: 0;
+  background-color: #FFD576;
+}
+
 .content-area {
   float: left;
   margin: 0 -25% 0 0;
@@ -372,15 +224,18 @@ Layout: Content-Sidebar
 
 .site-content {
   margin: 0 25% 0 0;
+  padding: 20px 60px 20px 10px;
 }
 
 .site-main {
   background-color: #fff;
   float: none;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 20px 60px 20px 40px;
   overflow: hidden;
   width: 1180px;
+  -webkit-box-shadow: 0px 0px 0px 6px rgba(245, 130, 32, 0.3);
+  box-shadow: 0px 0px 0px 6px rgba(245, 130, 32, 0.3);
 }
 
 .widget-area {
@@ -394,6 +249,9 @@ Layout: Content-Sidebar
   width: 100%;
 }
 
+/* ==========================================================================
+   Typography
+   ========================================================================== */
 html {
   font-family: 'Open Sans', sans-serif;
   /* 1 */
@@ -405,15 +263,146 @@ html {
 }
 
 body {
-  color: #404040;
+  color: #85827A;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
 h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
+  font-size: 2.6em;
+  margin: 0.1em 0;
+}
+
+h1.widget-title {
+  font-weight: 700;
+  font-size: 1.8em;
+  margin: 0.8em 0;
+}
+
+.posted-on, footer.entry-meta {
+  font-size: 1em;
+  margin: 0;
+  font-variant: small-caps;
+}
+
+ul, ol {
+  list-style-position: inside;
+  margin: 0;
+  padding-left: 10px;
+}
+
+li {
+  margin-bottom: 0.6em;
+}
+
+.widget-area ul, ol {
+  list-style-position: inside;
+  margin: 0;
+  padding-left: 0px;
+}
+
+.widget-area li {
+  margin-bottom: 0.4em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+a {
+  background: transparent;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Link Colors */
+a {
+  color: #00A3C0;
+}
+
+a:visited {
+  color: #0091AE;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #FFF;
+  background-color: #00A3C0;
 }
 
 /* =Global
@@ -429,15 +418,6 @@ textarea {
   line-height: 1.5;
 }
 
-body {
-  background-color: #FFD576;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both;
-}
-
 hr {
   background-color: #ccc;
   border: 0;
@@ -451,7 +431,7 @@ p {
 }
 
 ul, ol {
-  margin: 0 0 1.5em 3em;
+  margin: 0 0 1.5em 1.5em;
 }
 
 ul {
@@ -685,21 +665,6 @@ textarea {
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
   width: 98%;
-}
-
-/* Links */
-a {
-  color: royalblue;
-}
-
-a:visited {
-  color: purple;
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: midnightblue;
 }
 
 /* Alignment */
