@@ -7,6 +7,19 @@ body {
     margin: 0;
     background-color: #FFD576;
 }
+.site-header {
+	text-align: center;
+}
+.headercontainer {
+	width: 1180px;
+}
+.main-navigation {
+display: block;
+float: right;
+}
+.site-title {
+	float: left;
+}
 
 //Layout: Content-Sidebar
 .content-area {
