@@ -8,21 +8,31 @@ body {
     background-color: #FFD576;
 }
 .site-header {
-	
+	background-color: orange;
+	height: 133px;
+  height: 180px; /* Some kind of height is necessary here. */
+  line-height: 220px; /* This value should equal the height */
+  text-align: center; /* This horizontally centers the element */
 }
 .headercontainer {
 	margin: 0 auto;
 	padding: 10px 0;
 	width: 1180px;
-	vertical-align: middle;
+	  display: inline-block;
+  *display: inline; zoom: 1; /* IE7 inline-block hack */
+  line-height: normal; /* If left out, the line-height of .block will be inherited - by the parent (500px) in this case */
+  vertical-align: middle;
 }
 .site-branding {
 	clear: none;
 	float: left;
+	position: relative;
+	top: 50%;
 }
 .main-navigation {
 display: block;
 float: right;
+margin-top: 20px;
 }
 .site-title {
 	float: left;
@@ -42,6 +52,7 @@ float: right;
 	background-color: #fff;
 	float: none;
 	margin: 0 auto;
+	margin-top: -20px;
 	padding: 20px 80px 20px 40px;
 	overflow: hidden;
 	width: 1060px;
