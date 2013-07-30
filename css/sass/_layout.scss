@@ -7,21 +7,34 @@ body {
     margin: 0;
     background-color: #FFD576;
 }
+.top-bar {
+	height: 24px;
+	display: block;
+	background-color: #FFD576;
+	text-align: right;
+}
+#super-header-container {
+	width: 1180px;
+	margin: 0 auto;
+}
+.menu-top {
+	
+}
 .site-header {
-	background-color: orange;
-	height: 133px;
-  height: 180px; /* Some kind of height is necessary here. */
-  line-height: 220px; /* This value should equal the height */
-  text-align: center; /* This horizontally centers the element */
+	background-color: #FCB44C;
+	background-image: url('../img/header_bg.png');
+	height: 156px; /* Some kind of height is necessary here. */
+	line-height: 148px; /* This value should equal the height */
+	text-align: center; /* This horizontally centers the element */
 }
 .headercontainer {
 	margin: 0 auto;
 	padding: 10px 0;
 	width: 1180px;
-	  display: inline-block;
-  *display: inline; zoom: 1; /* IE7 inline-block hack */
-  line-height: normal; /* If left out, the line-height of .block will be inherited - by the parent (500px) in this case */
-  vertical-align: middle;
+	display: inline-block;
+	*display: inline; zoom: 1; /* IE7 inline-block hack */
+  	line-height: normal; /* If left out, the line-height of .block will be inherited - by the parent (500px) in this case */
+  	vertical-align: middle;
 }
 .site-branding {
 	clear: none;
@@ -30,9 +43,10 @@ body {
 	top: 50%;
 }
 .main-navigation {
-display: block;
-float: right;
-margin-top: 20px;
+	display: block;
+	float: right;
+	margin-top: 24px;
+	margin-right: -0.5em;
 }
 .site-title {
 	float: left;
@@ -52,7 +66,7 @@ margin-top: 20px;
 	background-color: #fff;
 	float: none;
 	margin: 0 auto;
-	margin-top: -20px;
+	margin-top: -36px;
 	padding: 20px 80px 20px 40px;
 	overflow: hidden;
 	width: 1060px;
@@ -69,13 +83,11 @@ margin-top: 20px;
 	width: 100%;
 }
 
-
-
 //class to hide the site description
 .hide { 
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
+	  position: absolute; 
+	  overflow: hidden; 
+	  clip: rect(0 0 0 0); 
+	  height: 1px; width: 1px; 
+	  margin: -1px; padding: 0; border: 0; 
 }

@@ -24,6 +24,15 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
+	<div id='super-header' class='top-bar'>
+		<div id='super-header-container'>
+			<nav>
+			    <?php
+			        wp_nav_menu( array('container_class' => 'menu-top',
+			        'theme_location' => 'secondary') ); ?>
+			</nav>
+		</div>
+	</div>
 		<header id="masthead" class="site-header" role="banner">
 			<div class="headercontainer clear">
 				<div class="site-branding">

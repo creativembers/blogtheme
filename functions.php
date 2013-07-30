@@ -45,7 +45,8 @@ function creativembers_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'creativembers' ),
+		'primary' => __( 'Main Menu', 'creativembers' ),
+		'secondary' => __( 'Top Menu', 'creativembers' ),
 	) );
 
 	/**
@@ -153,4 +154,20 @@ class Menu_With_Description extends Walker_Nav_Menu {
 
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
+}
+
+//Add a login/logout link to your navigation menu
+ 
+add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
+function add_login_logout_link($items, $args) {
+ 
+     if($args->theme_location == 'secondary') {   
+        ob_start();
+        wp_loginout('index.php');
+        $loginoutlink = ob_get_contents();
+        ob_end_clean();
+ 
+        $items .= '<li>'. $loginoutlink .'</li>';
+ 	}
+    return $items;
 }

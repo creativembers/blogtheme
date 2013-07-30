@@ -152,12 +152,24 @@ body {
   background-color: #FFD576;
 }
 
+.top-bar {
+  height: 24px;
+  display: block;
+  background-color: #FFD576;
+  text-align: right;
+}
+
+#super-header-container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
 .site-header {
-  background-color: orange;
-  height: 133px;
-  height: 180px;
+  background-color: #FCB44C;
+  background-image: url("../img/header_bg.png");
+  height: 156px;
   /* Some kind of height is necessary here. */
-  line-height: 220px;
+  line-height: 148px;
   /* This value should equal the height */
   text-align: center;
   /* This horizontally centers the element */
@@ -186,7 +198,8 @@ body {
 .main-navigation {
   display: block;
   float: right;
-  margin-top: 20px;
+  margin-top: 24px;
+  margin-right: -0.5em;
 }
 
 .site-title {
@@ -208,7 +221,7 @@ body {
   background-color: #fff;
   float: none;
   margin: 0 auto;
-  margin-top: -20px;
+  margin-top: -36px;
   padding: 20px 80px 20px 40px;
   overflow: hidden;
   width: 1060px;
@@ -411,6 +424,26 @@ a:focus,
 a:active {
   color: #FFF;
   background-color: #00A3C0;
+}
+
+/* =Menu
+----------------------------------------------- */
+.menu-top {
+  margin-right: -10px;
+  line-height: 1.5em;
+}
+
+.menu-top a {
+  color: #F7942E;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.menu-top li {
+  display: inline-block;
+  padding: 0 10px 0 0;
 }
 
 /* =Menu

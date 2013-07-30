@@ -1,5 +1,22 @@
 /* =Menu
 ----------------------------------------------- */
+.menu-top {
+	margin-right: -10px;
+	line-height: 1.5em;
+}
+.menu-top a {
+	color: #F7942E;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+.menu-top li {
+	display: inline-block;
+	padding: 0 10px 0 0;
+}
+/* =Menu
+----------------------------------------------- */
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
