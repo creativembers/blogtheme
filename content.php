@@ -7,12 +7,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php creativembers_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
@@ -34,6 +28,7 @@
 	<footer class="entry-meta">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
+				creativembers_posted_on();
 				/* translators: used between list items, there is a space after the comma */
 				$categories_list = get_the_category_list( __( ', ', 'creativembers' ) );
 				if ( $categories_list && creativembers_categorized_blog() ) :
@@ -57,7 +52,5 @@
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'creativembers' ), __( '1 Comment', 'creativembers' ), __( '% Comments', 'creativembers' ) ); ?></span>
 		<?php endif; ?>
-
-		<?php edit_post_link( __( 'Edit', 'creativembers' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->
