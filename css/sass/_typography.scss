@@ -14,10 +14,14 @@ html {
 body {
 	color: #85827A;
 	font-size: 16px;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	line-height: 1.8;
 }
-
+p:first-of-type::first-line {
+    font-size: 1.7rem;
+    // font-weight: bold;
+    font-variant: small-caps;
+}
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
 	clear: both;
@@ -42,10 +46,26 @@ h1.widget-title {
 	font-size: 1.8em;
   	margin: 0.8em 0;
 }
-.posted-on, footer.entry-meta {
+.entry-meta {
+
+}
+.entry-header {
+    // border-bottom: 1px dotted #CCC;
+}
+.posted-on {
 	font-size: 1em;
-  	margin: 0;
   	font-variant: small-caps;
+}
+footer.entry-meta {
+    font-size: 0.7em;
+    margin: 0;
+    // border-top: 1px dotted #CCC;
+    // border-bottom: 1px dotted #CCC;
+    background-color: #F9F9F9;
+    text-transform: uppercase;
+}
+.entry-meta span {
+    margin-right: 12px;
 }
 
 .page-content, .entry-content, .entry-summary {
