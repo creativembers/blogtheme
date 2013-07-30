@@ -222,7 +222,7 @@ body {
   float: none;
   margin: 0 auto;
   margin-top: -36px;
-  padding: 20px 80px 20px 40px;
+  padding: 20px 40px;
   overflow: hidden;
   width: 1060px;
   -webkit-box-shadow: 0px 0px 0px 6px rgba(245, 130, 32, 0.3);
@@ -522,7 +522,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
-  font-size: 2.6em;
+  font-size: 2.4em;
   margin: 0.1em 0;
 }
 
@@ -534,12 +534,6 @@ h1.site-title {
   background-image: url("../img/logo.png");
   width: 333px;
   height: 66px;
-}
-
-h1.widget-title {
-  font-weight: 700;
-  font-size: 1.8em;
-  margin: 0.8em 0;
 }
 
 .posted-on {
@@ -574,21 +568,6 @@ ul, ol {
 
 li {
   margin-bottom: 0.6em;
-}
-
-.widget-area {
-  font-size: 15px;
-  font-size: 1.5rem;
-}
-
-.widget-area ul, ol {
-  list-style-position: inside;
-  margin: 0;
-  padding-left: 0px;
-}
-
-.widget-area li {
-  margin-bottom: 0.4em;
 }
 
 abbr[title] {
@@ -691,10 +670,10 @@ a:active {
 }
 
 .menu-top a {
-  color: #F7942E;
+  color: #FF8100;
   text-decoration: none;
   display: inline-block;
-  font-size: 0.9em;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -775,6 +754,43 @@ span.sub {
   letter-spacing: 0.1em;
   color: #F57E20;
   text-shadow: none;
+}
+
+/* =Widgets
+----------------------------------------------- */
+.widget {
+  margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+  max-width: 100%;
+}
+
+/* Search widget */
+h1.widget-title {
+  font-weight: normal;
+  font-size: 2.2em;
+  margin: 0 0 0.1em 0;
+  font-variant: small-caps;
+  color: #F90;
+}
+
+.widget-area {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+.widget-area ul, ol {
+  list-style-position: inside;
+  list-style-type: square;
+  margin: 0;
+  padding-left: 0px;
+}
+
+.widget-area li {
+  margin-bottom: 0.4em;
 }
 
 /* =Global
@@ -1201,22 +1217,6 @@ object {
 ----------------------------------------------- */
 .comment-content a {
   word-wrap: break-word;
-}
-
-/* =Widgets
------------------------------------------------ */
-.widget {
-  margin: 0 0 1.5em;
-}
-
-/* Make sure select elements fit in widgets */
-.widget select {
-  max-width: 100%;
-}
-
-/* Search widget */
-.widget_search .search-submit {
-  display: none;
 }
 
 /* =Infinite Scroll

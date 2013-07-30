@@ -226,7 +226,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
-	font-size: 2.6em;
+	font-size: 2.4em;
     margin: 0.1em 0;
 }
 h1.site-title {
@@ -237,17 +237,6 @@ h1.site-title {
     background-image: url("../img/logo.png");
     width: 333px;
     height: 66px;
-}
-h1.widget-title {
-	font-weight: 700;
-	font-size: 1.8em;
-  	margin: 0.8em 0;
-}
-.entry-meta {
-
-}
-.entry-header {
-    // border-bottom: 1px dotted #CCC;
 }
 .posted-on {
 	font-size: 1em;
@@ -280,20 +269,6 @@ ul, ol {
 li {
 	margin-bottom: 0.6em;
 }
-.widget-area {
-	font-size: 15px;
-	font-size: 1.5rem;
-}
-.widget-area ul, ol {
-	list-style-position: inside;
-	margin: 0;
-	padding-left: 0px;
-}
-.widget-area li {
-	margin-bottom: 0.4em;
-}
-
-
 
 
 // Address styling not present in IE 8/9, Safari 5, and Chrome.
