@@ -39,7 +39,10 @@ function creativembers_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
+
+	// Set post thumbnails to 100 px square and cropping to true
+	set_post_thumbnail_size(150, 150, true);
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
@@ -170,4 +173,25 @@ function add_login_logout_link($items, $args) {
         $items .= '<li>'. $loginoutlink .'</li>';
  	}
     return $items;
+}
+// Alter the widget title markup
+add_filter('dynamic_sidebar_params', 'wrap_widget_titles', 20);
+
+/**
+ * Wrap the widget titles - including any existing before/after title markup
+ * inside an extra div we can target with div.widget_title_wrapper.
+ *
+ * If we needed to do this selectively we could test against $widget['name']
+ * or $widget['id'].
+ */
+function wrap_widget_titles(array $params) {
+        // $params will ordinarily be an array of 2 elements, we are interested
+        // only in the first element
+        $widget =& $params[0];
+
+        // Wrap the title
+        $widget['before_title'] = '<div class="widget_title_wrapper">'.$widget['before_title'];
+        $widget['after_title'] = $widget['after_title'] .'</div> ';
+
+        return $params;
 }

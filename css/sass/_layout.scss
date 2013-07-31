@@ -77,6 +77,16 @@ body {
 	float: right;
 	width: 25%;
 }
+
+.post-thumbnail {
+	float: left;
+}
+.post-thumbnail img {
+	border: 1px solid #AAA;
+	margin: 1.5em 1.5em 1em 0;
+	-webkit-box-shadow: 4px 4px 0 #E5E5E5;
+	box-shadow: 4px 4px 0 #E5E5E5;
+}
 .site-footer {
 	clear: both;
 	width: 100%;
