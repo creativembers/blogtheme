@@ -10,24 +10,31 @@
 	max-width: 100%;
 }
 h1.widget-title {
-	font-weight: normal;
-	font-size: 1.6em;
-	margin: 0 0 0.1em 0;
-	font-variant: small-caps;
-	color: #8A8A8A;
-	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 0.1em;
-}
-h1.widget-title:after {
-	content: " ";
-	border-top: 1px solid #333;
-	width: 100px;
-	display: block;	 
+font-weight: bold;
+font-size: 1.3em;
+margin: 0 0 0.1em 0;
+font-variant: small-caps;
+text-transform: uppercase;
+color: #2B98A7;
+font-family: 'Open Sans', sans-serif;
+letter-spacing: 0.1em;
+text-shadow: 1px 1px 0px #fff, 2px 2px 0px #9BCBD1;
+background: #ffffff;
+background: -moz-linear-gradient(left, #ffffff 0%, #c7e8e8 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(100%,#c7e8e8));
+background: -webkit-linear-gradient(left, #ffffff 0%,#c7e8e8 100%);
+background: -o-linear-gradient(left, #ffffff 0%,#c7e8e8 100%);
+background: -ms-linear-gradient(left, #ffffff 0%,#c7e8e8 100%);
+background: linear-gradient(to right, #ffffff 0%,#c7e8e8 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c7e8e8',GradientType=1 );
+margin-right: -40px;
 }
 .widget-area {
 	font-size: 13px;
 	font-size: 1.3rem;
-    line-height: 2;
+	line-height: 2;
+	margin-top: -16px;
+	overflow: visible;
 }
 .widget-area ul, ol {
 	list-style-position: inside;
@@ -44,11 +51,11 @@ h1.widget-title:after {
 	
 }
 .widget_search_custom {
-background-color: #F26660;
-float: right;
-margin-right: -60px;
-padding: 8px 16px 8px 8px;
-box-shadow: 4px 6px 0 rgba(0, 0, 0, 0.1);
+	background-color: #F26660;
+	float: right;
+	margin-right: -60px;
+	padding: 8px 16px 8px 8px;
+	box-shadow: 4px 6px 0 rgba(0, 0, 0, 0.1);
 }
 span.search_custom:after {
 	content: '';
@@ -62,24 +69,24 @@ span.search_custom:after {
 }
 
 .widget_search_custom input[type="search"] {
-padding: 4px;
-height: 24px;
-width: 222px;
-box-shadow: inset 3px 3px 0px 2px #DFDFDF;
-background: #fff;
-border-radius: 0;
+	padding: 6px 0px 4px 10px;
+	height: 24px;
+	width: 222px;
+	box-shadow: inset 3px 3px 0px 2px #DFDFDF;
+	background: #fff;
+	border-radius: 0;
 }
 .widget_search_custom input[type="submit"] {
-border: 0;
-border-radius: 0;
-background: #F26660;
-box-shadow: none;
-color: #FFF;
-cursor: pointer;
--webkit-appearance: button;
-font-size: 12px;
-font-size: 1.2rem;
-line-height: 1;
-padding: .6em 1em .4em;
-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	border: 0;
+	border-radius: 0;
+	background: #F26660;
+	box-shadow: none;
+	color: #FFF;
+	cursor: pointer;
+	-webkit-appearance: button;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }

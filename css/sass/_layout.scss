@@ -14,7 +14,7 @@ body {
 	text-align: right;
 }
 #super-header-container {
-	width: 1180px;
+	width: 1146px;
 	margin: 0 auto;
 }
 .menu-top {
@@ -30,7 +30,7 @@ body {
 .headercontainer {
 	margin: 0 auto;
 	padding: 10px 0;
-	width: 1180px;
+	width: 1146px;
 	display: inline-block;
 	*display: inline; zoom: 1; /* IE7 inline-block hack */
   	line-height: normal; /* If left out, the line-height of .block will be inherited - by the parent (500px) in this case */
@@ -75,7 +75,6 @@ body {
 }
 .widget-area {
 	float: right;
-	overflow: hidden;
 	width: 25%;
 }
 .site-footer {

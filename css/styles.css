@@ -160,7 +160,7 @@ body {
 }
 
 #super-header-container {
-  width: 1180px;
+  width: 1146px;
   margin: 0 auto;
 }
 
@@ -178,7 +178,7 @@ body {
 .headercontainer {
   margin: 0 auto;
   padding: 10px 0;
-  width: 1180px;
+  width: 1146px;
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -231,7 +231,6 @@ body {
 
 .widget-area {
   float: right;
-  overflow: hidden;
   width: 25%;
 }
 
@@ -670,11 +669,12 @@ a:active {
 }
 
 .menu-top a {
-  color: #FF8100;
+  color: #FF7A00;
   text-decoration: none;
   display: inline-block;
-  font-size: 1em;
+  font-size: 0.9em;
   text-transform: uppercase;
+  line-height: 1.8em;
 }
 
 .menu-top li {
@@ -768,26 +768,32 @@ span.sub {
 }
 
 h1.widget-title {
-  font-weight: normal;
-  font-size: 1.6em;
+  font-weight: bold;
+  font-size: 1.3em;
   margin: 0 0 0.1em 0;
   font-variant: small-caps;
-  color: #8A8A8A;
+  text-transform: uppercase;
+  color: #2B98A7;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.1em;
-}
-
-h1.widget-title:after {
-  content: " ";
-  border-top: 1px solid #333;
-  width: 100px;
-  display: block;
+  text-shadow: 1px 1px 0px #fff, 2px 2px 0px #9BCBD1;
+  background: #ffffff;
+  background: -moz-linear-gradient(left, white 0%, #c7e8e8 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, white), color-stop(100%, #c7e8e8));
+  background: -webkit-linear-gradient(left, white 0%, #c7e8e8 100%);
+  background: -o-linear-gradient(left, white 0%, #c7e8e8 100%);
+  background: -ms-linear-gradient(left, white 0%, #c7e8e8 100%);
+  background: linear-gradient(to right, white 0%, #c7e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#c7e8e8',GradientType=1 );
+  margin-right: -40px;
 }
 
 .widget-area {
   font-size: 13px;
   font-size: 1.3rem;
   line-height: 2;
+  margin-top: -16px;
+  overflow: visible;
 }
 
 .widget-area ul, ol {
@@ -822,7 +828,7 @@ span.search_custom:after {
 }
 
 .widget_search_custom input[type="search"] {
-  padding: 4px;
+  padding: 6px 0px 4px 10px;
   height: 24px;
   width: 222px;
   box-shadow: inset 3px 3px 0px 2px #DFDFDF;
