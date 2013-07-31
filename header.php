@@ -48,6 +48,6 @@
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'walker' => $walker ) ); ?>
 				</nav><!-- #site-navigation -->
-			</div>	
+			</div>
 		</header><!-- #masthead -->
 	<div id="main" class="site-main">
