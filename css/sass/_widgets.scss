@@ -9,13 +9,20 @@
 .widget select {
 	max-width: 100%;
 }
-
 h1.widget-title {
 	font-weight: normal;
-	font-size: 2.2em;
+	font-size: 1.6em;
 	margin: 0 0 0.1em 0;
 	font-variant: small-caps;
-	color: #F90;
+	color: #8A8A8A;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.1em;
+}
+h1.widget-title:after {
+	content: " ";
+	border-top: 1px solid #333;
+	width: 100px;
+	display: block;	 
 }
 .widget-area {
 	font-size: 13px;
@@ -42,6 +49,16 @@ float: right;
 margin-right: -60px;
 padding: 8px 16px 8px 8px;
 box-shadow: 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+span.search_custom:after {
+	content: '';
+	position: relative;
+	left: 305px;
+	bottom: 6px;
+	height: 0;
+	width: 0;
+	border-top: 18px solid #D64344;
+	border-right: 20px solid transparent;
 }
 
 .widget_search_custom input[type="search"] {

@@ -5,11 +5,12 @@
  * @package creativembers
  */
 ?>
-	<div class></div>
+	<span class='search_custom'>
 		<aside id="search" class="widget widget_search_custom">
 			<?php get_search_form(); ?>
 		</aside>
-
+	</span>
+	
 	<div id="secondary" class="widget-area" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
