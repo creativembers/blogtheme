@@ -195,3 +195,14 @@ function wrap_widget_titles(array $params) {
 
         return $params;
 }
+// Add read more link to posts after excerpt
+function new_excerpt_more( $more ) {
+	return ' [.....] <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Read More</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+// Adjust Excerpt length
+function custom_excerpt_length( $length ) {
+	return 60;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
