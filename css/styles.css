@@ -214,7 +214,7 @@ body {
 
 .site-content {
   margin: 0 25% 0 0;
-  padding: 30px 108px 20px 48px;
+  padding: 0 60px 0 30px;
 }
 
 .site-main {
@@ -234,20 +234,27 @@ body {
   width: 25%;
 }
 
+.entry-content {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 1px dotted #22AAC5;
+}
+
 .post-date {
   background-color: #22AAC5;
   color: #fff;
   font-variant: small-caps;
-  min-width: 46px;
+  min-width: 3em;
   text-align: center;
   display: inline-block;
-  font-size: 1.2em;
-  line-height: 1.2em;
+  font-size: 1em;
+  line-height: 1.3em;
   padding-right: 0.3em;
   padding-left: 0.3em;
   position: relative;
-  top: 3.4em;
-  right: 3.8em;
+  top: 4.2em;
+  right: 5.0em;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .post-year {
@@ -575,10 +582,10 @@ h1.site-title {
 }
 
 footer.entry-meta {
-  font-size: 0.7em;
+  font-size: 0.8em;
   margin: 0;
-  background-color: #F9F9F9;
   text-transform: uppercase;
+  padding-top: 0.5em;
 }
 
 footer.entry-meta a {
@@ -589,7 +596,7 @@ footer.entry-meta a {
   margin-right: 12px;
 }
 
-.page-content, .entry-content, .entry-summary {
+.page-content, .entry-summary {
   margin: 0.5em 0 1.5em;
 }
 
