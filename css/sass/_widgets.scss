@@ -10,24 +10,20 @@
 	max-width: 100%;
 }
 h1.widget-title {
-	font-weight: bold;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	margin: 0 0 0.1em 0;
 	font-variant: small-caps;
 	text-transform: uppercase;
-	color: #22AAC5;
+	color: #F07878;
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.1em;
-	text-shadow: 1px 1px 0px #fff, 2px 2px 0px #9BCBD1;
-	background: #ffffff;
-	background: -moz-linear-gradient(left, #ffffff 0%, #E5F6F8  100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(100%,#E5F6F8 ));
-	background: -webkit-linear-gradient(left, #ffffff 0%,#c7e8e8 100%);
-	background: -o-linear-gradient(left, #ffffff 0%,#E5F6F8  100%);
-	background: -ms-linear-gradient(left, #ffffff 0%,#E5F6F8  100%);
-	background: linear-gradient(to right, #ffffff 0%,#E5F6F8  100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c7e8e8',GradientType=1 );
-	margin-right: -40px;
+	padding-right: 5px;
+	background-color: #fff;
+	display: inline;
+}
+.widget_title_wrapper {
+	background-color: #fff;
+	background-image: url('../img/widget-bg.png');
 }
 .widget-area {
 	font-size: 13px;
@@ -37,10 +33,14 @@ h1.widget-title {
 	overflow: visible;
 }
 .widget-area ul, ol {
-	list-style-position: inside;
+	list-style-position: outside;
     list-style-type: square;
 	margin: 0;
+	margin-left: 2em;
 	padding-left: 0px;
+}
+.widget-area ul a, ol a {
+	color: #80888A;
 }
 .widget-area li {
 	margin-bottom: 0.4em;
