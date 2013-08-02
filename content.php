@@ -7,6 +7,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header">
+		<div class='post-date'><?php echo get_the_date('M j'); ?><br><span class='post-year'><?php echo get_the_date('Y'); ?></span></div>
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 	</header><!-- .entry-header -->
 
@@ -36,7 +37,6 @@
 	<footer class="entry-meta">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
-				creativembers_posted_on();
 				/* translators: used between list items, there is a space after the comma */
 				$categories_list = get_the_category_list( __( ', ', 'creativembers' ) );
 				if ( $categories_list && creativembers_categorized_blog() ) :

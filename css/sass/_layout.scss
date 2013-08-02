@@ -78,6 +78,27 @@ body {
 	width: 25%;
 }
 
+.post-date {
+	background-color: #22AAC5;
+	color: #fff;
+	font-variant: small-caps;
+	min-width: 46px;
+	text-align: center;
+	display: inline-block;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	padding-right: 0.3em;
+	padding-left: 0.3em;
+	position: relative;
+	top: 3.4em;
+	right: 3.8em;
+}
+.post-year {
+	font-size: 0.8em;
+	letter-spacing: 0.2em;
+	border-top: 1px dotted #fff;
+	margin-top: 0.2em;
+}
 .post-thumbnail {
 	float: left;
 }
