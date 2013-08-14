@@ -6,8 +6,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<div class='post-date'><?php echo get_the_date('M j'); ?><br><span class='post-year'><?php echo get_the_date('Y'); ?></span></div>
 	<header class="entry-header">
-		<div class='post-date'><?php echo get_the_date('M j'); ?><br><span class='post-year'><?php echo get_the_date('Y'); ?></span></div>
+		
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 	</header><!-- .entry-header -->
 

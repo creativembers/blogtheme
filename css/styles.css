@@ -236,8 +236,9 @@ body {
 
 .entry-header {
   height: auto;
-  line-height: 1.2em;
+  line-height: 2.4em;
   margin-bottom: 1.4em;
+  margin-top: -1.5em;
 }
 
 .entry-content {
@@ -258,10 +259,12 @@ body {
   padding-right: 0.3em;
   padding-left: 0.3em;
   position: relative;
-  top: 2.3em;
+  float: left;
+  top: 3.1em;
   right: 5.0em;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   text-shadow: 1px 1px 0 #1C8D9C;
+  margin-bottom: 8px;
 }
 
 .post-year {
@@ -570,7 +573,7 @@ h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 2.4em;
-  margin: 0.1em 0;
+  margin: 2em 0 0 0;
 }
 
 h1.site-title {

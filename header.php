@@ -35,9 +35,12 @@
 	</div>
 		<header id="masthead" class="site-header" role="banner">
 			<div class="headercontainer clear">
-				<div class="site-branding">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="site-description hide"><?php bloginfo( 'description' ); ?></h2>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+				<div class="logo-wrap">
+					<div class="site-branding">
+						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+						<h2 class="site-description hide"><?php bloginfo( 'description' ); ?></h2>
+					</div></a>
 				</div>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
