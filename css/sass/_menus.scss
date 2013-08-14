@@ -5,12 +5,13 @@
 	line-height: 1.5em;
 }
 .menu-top a {
-	color: #FF7A00;
+	color: #F8860B;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 0.9em;
 	text-transform: uppercase;
 	line-height: 1.8em;
+	font-family: 'Open Sans', sans-serif;
 }
 .menu-top li {
 	display: inline-block;
@@ -36,15 +37,19 @@
 	text-transform: uppercase;
 	color: #FFF;
 	text-shadow:2px 1px 0px #F57E20;
-	padding: 0 0.5em;
+	padding: 0.1em 1.2em 0.2em 0.2em;
 	line-height: 0.8em;
+	text-align: left;
 }
+.main-navigation a:hover {
+
+	}
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	display: none;
 	float: left;
 	position: absolute;
-	top: 1.5em;
+	top: 3.3em;
 	left: 0;
 	z-index: 99999;
 }
@@ -53,8 +58,16 @@
 	top: 0;
 }
 .main-navigation ul ul a {
-	width: 200px;
-}
+	width: 160px;
+	text-shadow: none;
+	padding: 3px 0 3px 9px;
+	line-height: 1.3em;
+	font-size: 0.9em;
+	text-align: left;
+	color: #22a1b3;
+	background-color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	}
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
@@ -62,6 +75,8 @@
 .main-navigation ul ul :hover > a {
 }
 .main-navigation ul ul a:hover {
+	background-color: #22AAC5;
+	color: #fff;
 }
 .main-navigation ul li:hover > ul {
 	display: block;
@@ -86,14 +101,110 @@
 		display: none;
 	}
 }
-
+ul.sub-menu {
+	background-color: #fff;
+	padding-top: 0.5em;
+}
 // Description styles
 
 span.sub { 
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 0.5em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #F57E20;
-  text-shadow: none;
+  // font-family: 'Open Sans Condensed', sans-serif;
+  // font-size: 0.5em;
+  // text-transform: uppercase;
+  // letter-spacing: 0.1em;
+  // color: #F57E20;
+  // text-shadow: none;
+  display: none;
+}
+
+// Custom Icon Classes for Main Menu
+
+//Portfolio Folder
+.icon-custom-portfolio:before {
+	content: "\f07c";
+	color: #fff;
+	position: relative;
+	top: -8px;
+	left: -8%;
+	font-size: 1.6em;
+	text-shadow: 2px 1px 0px #F57E20;
+}
+//Services Laptop
+.icon-custom-services:before {
+	content: "\f109";
+	color: #fff;
+	position: relative;
+	top: -8px;
+	left: -8%;
+	font-size: 1.6em;
+	text-shadow: 2px 1px 0px #F57E20;
+}
+//Theme Shop cart
+.icon-custom-shop:before {
+	content: "\f07A";
+	color: #fff;
+	position: relative;
+	top: -8px;
+	left: -8%;
+	font-size: 1.6em;
+	text-shadow: 2px 1px 0px #F57E20;
+}
+//Training gears
+.icon-custom-training:before {
+	content: "\f085";
+	color: #fff;
+	position: relative;
+	top: -8px;
+	left: -8%;
+	font-size: 1.6em;
+	text-shadow: 2px 1px 0px #F57E20;
+}
+//Blog Pencil
+.icon-custom-blog:before {
+	content: "\f040";
+	color: #fff;
+	position: relative;
+	top: -8px;
+	left: -8%;
+	font-size: 1.6em;
+	text-shadow: 2px 1px 0px #F57E20;
+}
+
+// Custom Icon Classes for Top Menu
+
+//Contact Chat bubbles
+.icon-custom-contact:before {
+	content: "\F086";
+	color: #FF765C;
+	font-size: 1em;
+	padding-right: 0.3em;
+	position: relative;
+	top: 0.1em;
+}
+//About info sign
+.icon-custom-about:before {
+	content: "\F05A";
+	color: #FF765C;
+	font-size: 1em;
+	padding-right: 0.3em;
+	position: relative;
+	top: 0.1em;
+}
+//Support wrench
+.icon-custom-support:before {
+	content: "\F0AD";
+	color: #FF765C;
+	font-size: 1em;
+	padding-right: 0.3em;
+	position: relative;
+	top: 0.1em;
+}	
+//FAQ Question Mark
+.icon-custom-faq:before {
+	content: "\F059";
+	color: #FF765C;
+	font-size: 1em;
+	padding-right: 0.3em;
+	position: relative;
+	top: 0.1em;
 }

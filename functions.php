@@ -206,3 +206,17 @@ function custom_excerpt_length( $length ) {
 	return 60;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+//Add Font Awesome Integration
+
+add_action('wp_enqueue_scripts', 'zig_style_loader');
+function zig_style_loader() {
+ 
+    // Enqueue FontAwesome from NetDNA CDN
+    wp_enqueue_style('fontawesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css', array(), null);
+ 
+    // Enqueue IE conditional styles
+    global $wp_styles;
+    wp_enqueue_style('ie7-fontawesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css', array(), null);
+    $wp_styles->add_data( 'ie7-fontawesome', 'conditional', 'lte IE 7' );
+}

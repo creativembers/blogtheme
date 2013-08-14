@@ -45,7 +45,7 @@ body {
 .main-navigation {
 	display: block;
 	float: right;
-	margin-top: 24px;
+	margin-top: 18px;
 	margin-right: -0.5em;
 }
 .site-title {
@@ -90,24 +90,37 @@ body {
 	border-bottom: 1px dotted #22AAC5;
 }
 .post-date {
-background-color: #22AAC5;
-color: #fff;
-font-variant: small-caps;
-min-width: 3em;
-text-align: center;
-display: inline-block;
-font-size: 1em;
-line-height: 1.3em;
-padding-right: 0.3em;
-padding-left: 0.3em;
-position: relative;
-float: left;
-top: 3.1em;
-right: 5.0em;
-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
-text-shadow: 1px 1px 0 #1C8D9C;
-margin-bottom: 8px;
+	background-color: #22AAC5;
+	color: #fff;
+	font-variant: small-caps;
+	min-width: 3em;
+	text-align: center;
+	display: inline-block;
+	font-size: 1em;
+	line-height: 1.3em;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	padding-right: 0.6em;
+	padding-left: 0.9em;
+	position: relative;
+	float: left;
+	top: 3.2em;
+	right: 5.8em;
+	box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+	text-shadow: 1px 1px 0 #1C8D9C;
+	margin-bottom: 8px;
 }
+.post-date:after {
+	content: '';
+	position: relative;
+	left: -45px;
+	bottom: -37px;
+	height: 0;
+	width: 0;
+	border-top: 16px solid #28929B;
+	border-left: 12px solid transparent;
+}
+
 .post-year {
 	font-size: 0.8em;
 	letter-spacing: 0.2em;
